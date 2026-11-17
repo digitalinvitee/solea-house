@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOLÉA HOUSE | Luxury Boutique Hotel in Mallorca</title>
+<meta name="description" content="SOLÉA HOUSE is a private Mediterranean escape in Mallorca, shaped by light, nature and the art of slowing down. Rooms and suites from €220 per night. A hospitality concept by INVITÉ Studio.">
+<meta name="theme-color" content="#302B25">
+<meta property="og:title" content="SOLÉA HOUSE | Not just a stay. A feeling.">
+<meta property="og:description" content="A private Mediterranean escape in Mallorca, shaped by light, nature and the art of slowing down.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1603034203013-d532350372c6?auto=format&fit=crop&w=1200&h=630&q=75">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+/* Layout idea: a 12-column editorial grid where images sit off-axis and type holds the left edge. One visual world, light only. */
+:root{
+  --ivory:#F4F0E8; --limestone:#D9D0C2; --sand:#C7B69E; --olive:#73765C; --olive-deep:#575A44; --espresso:#302B25; --white:#FAF9F6;
+  --line:rgba(48,43,37,.16); --line-light:rgba(250,249,246,.28);
+  --serif:"Marcellus","Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Instrument Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --gutter:clamp(1.25rem,4vw,4rem); --section:clamp(5rem,11vw,10rem);
+  --ease:cubic-bezier(.2,.7,.1,1); --head:76px;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scrollbar-gutter:stable}
+body{margin:0;background:var(--ivory);color:var(--espresso);font-family:var(--sans);font-size:1rem;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html.lock{overflow:hidden}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3,h4,p,figure,ul,dl,dd{margin:0}
+ul{padding:0;list-style:none}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--olive);outline-offset:3px}
+.on-dark :focus-visible,.hero :focus-visible,.final :focus-visible{outline-color:var(--white)}
+section[id]{scroll-margin-top:0}
+.wrap{width:min(100% - 2*var(--gutter),1440px);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:var(--espresso);color:var(--white);padding:.75rem 1rem;z-index:200}
+.skip:focus{left:0}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+
+/* Type */
+.display,h2{font-family:var(--serif);font-weight:400;text-transform:uppercase;text-wrap:balance;letter-spacing:.012em}
+h2{font-size:clamp(2rem,4.7vw,4.4rem);line-height:1.02}
+h1,h2,h3{overflow-wrap:break-word}
+h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.5rem,2.3vw,2.15rem);line-height:1.12;text-wrap:balance}
+.eyebrow{font-size:.72rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--olive-deep)}
+.body{max-width:31em;color:rgba(48,43,37,.86)}
+.body + .body{margin-top:1.1em}
+
+/* Buttons */
+.btn{white-space:nowrap;position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:3.25rem;padding:0 1.9rem;font-size:.74rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;border:1px solid var(--espresso);background:var(--espresso);color:var(--white);overflow:hidden;isolation:isolate;transition:color .45s var(--ease),border-color .45s var(--ease)}
+.btn::before{content:"";position:absolute;inset:0;background:var(--olive);transform:translateY(101%);transition:transform .5s var(--ease);z-index:-1}
+.btn:hover::before,.btn:focus-visible::before{transform:none}
+.btn:hover,.btn:focus-visible{border-color:var(--olive)}
+.btn--line{background:transparent;color:var(--espresso)}
+.btn--line::before{background:var(--espresso)}
+.btn--line:hover,.btn--line:focus-visible{color:var(--white);border-color:var(--espresso)}
+.btn--light{background:var(--white);border-color:var(--white);color:var(--espresso)}
+.btn--light::before{background:var(--sand)}
+.btn--light:hover,.btn--light:focus-visible{border-color:var(--sand)}
+.btn--ghost{background:transparent;border-color:var(--line-light);color:var(--white)}
+.btn--ghost::before{background:var(--white)}
+.btn--ghost:hover,.btn--ghost:focus-visible{color:var(--espresso);border-color:var(--white)}
+.link{display:inline-flex;align-items:center;gap:.7rem;font-size:.74rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;padding:.6rem 0;background:linear-gradient(currentColor,currentColor) left bottom/100% 1px no-repeat;transition:background-size .45s var(--ease)}
+.link:hover{background-size:38% 1px}
+
+/* Image frames */
+.ph{position:relative;overflow:hidden;background:var(--limestone)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph.noimg img{visibility:hidden}
+.js .ph.rvl::after{content:"";position:absolute;inset:-1px;background:inherit;transform-origin:50% 100%;transform:scaleY(1);transition:transform 1.2s var(--ease) var(--d,0s);pointer-events:none;z-index:1}
+.js .ph.rvl.in::after{transform:scaleY(0)}
+.js .ph.rvl img{transform:scale(1.14);transition:transform 1.8s var(--ease) var(--d,0s)}
+.js .ph.rvl.in img{transform:scale(1.001)}
+.js .ph.par img,.js .ph.rvl.par.in img{transition:none;transform:translate3d(0,var(--py,0px),0) scale(1.16)}
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease) var(--d,0s),transform .9s var(--ease) var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+
+/* Header */
+.head{position:fixed;inset:0 0 auto 0;height:var(--head);z-index:60;color:var(--white);transition:background-color .5s var(--ease),color .5s var(--ease),transform .5s var(--ease),box-shadow .5s}
+.head.solid{background:rgba(244,240,232,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:var(--espresso);box-shadow:0 1px 0 var(--line)}
+.head.away{transform:translateY(-100%)}
+.head__in{height:100%;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:2rem}
+.mark{display:inline-flex;align-items:center;min-height:44px;justify-self:start;font-family:var(--serif);font-size:1.18rem;letter-spacing:.3em;text-transform:uppercase;white-space:nowrap;line-height:1}
+.mark span{letter-spacing:.3em;opacity:.72;margin-left:.18em}
+.nav{display:flex;justify-content:center;gap:clamp(1.25rem,2.6vw,2.75rem)}
+.nav a{position:relative;font-size:.74rem;font-weight:500;letter-spacing:.17em;text-transform:uppercase;padding:.6rem 0}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:.3rem;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
+.nav a:hover::after,.nav a[aria-current="true"]::after{transform:scaleX(1)}
+.head__cta{display:flex;align-items:center;gap:1rem}
+.head .btn{min-height:2.7rem;padding:0 1.35rem;background:transparent;border-color:currentColor;color:inherit}
+.head .btn::before{background:var(--white)}
+.head .btn:hover{color:var(--espresso);border-color:var(--white)}
+.head.solid .btn::before{background:var(--espresso)}
+.head.solid .btn:hover{color:var(--white);border-color:var(--espresso)}
+.head .sm{display:none}
+.burger{display:none;width:2.75rem;height:2.75rem;position:relative}
+.burger i{position:absolute;left:.55rem;right:.55rem;height:1px;background:currentColor;transition:transform .45s var(--ease),top .45s var(--ease)}
+.burger i:first-child{top:1.12rem}.burger i:last-child{top:1.6rem}
+.burger[aria-expanded="true"] i:first-child{top:1.36rem;transform:rotate(45deg)}
+.burger[aria-expanded="true"] i:last-child{top:1.36rem;transform:rotate(-45deg)}
+
+/* Mobile menu */
+.menu{overflow-y:auto;position:fixed;inset:0;z-index:55;background:var(--espresso);color:var(--white);display:flex;flex-direction:column;justify-content:space-between;padding:calc(var(--head) + 2rem) var(--gutter) 2rem;clip-path:inset(0 0 100% 0);visibility:hidden;transition:clip-path .7s var(--ease),visibility 0s .7s}
+.menu.open{clip-path:inset(0);visibility:visible;transition:clip-path .7s var(--ease)}
+.menu ul{display:grid;gap:.35rem}
+.menu li{overflow:hidden}
+.menu li a{display:block;font-family:var(--serif);font-size:clamp(1.9rem,8.4vw,3rem);line-height:1.4;text-transform:uppercase;letter-spacing:.02em;transform:translateY(105%);transition:transform .7s var(--ease) calc(var(--i)*.06s + .12s)}
+.menu.open li a{transform:none}
+.menu__foot{display:grid;gap:1.25rem;font-size:.82rem;color:var(--sand)}
+body.menu-open .head{color:var(--white);background:transparent;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;transform:none}
+
+/* Hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:grid;align-items:end;color:var(--white);background:var(--espresso);overflow:hidden}
+.hero__img{position:absolute;inset:-6% 0 -6% 0}
+.hero__img img{width:100%;height:100%;object-fit:cover;object-position:50% 72%;transform:translate3d(0,var(--py,0px),0)}
+.js .hero__img{animation:settle 16s var(--ease) both}
+@keyframes settle{from{transform:scale(1.14)}to{transform:none}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(48,43,37,.5) 0%,rgba(48,43,37,.08) 26%,rgba(48,43,37,.16) 50%,rgba(48,43,37,.8) 100%);pointer-events:none}
+.hero__in{position:relative;z-index:1;padding-block:calc(var(--head) + 2rem) 5.25rem}
+.hero__grid{display:block}
+.hero h1{font-size:clamp(2.7rem,7.6vw,7.8rem);line-height:.98}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em;white-space:nowrap}
+.hero h1 .ln span{display:block}
+.js .hero h1 .ln span{transform:translateY(108%);transition:transform 1.25s var(--ease) calc(var(--i)*.13s + .25s)}
+.js.ready .hero h1 .ln span{transform:none}
+.hero__side{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;margin-top:clamp(1.5rem,3vw,2.75rem)}
+.hero__side p{font-size:clamp(1rem,1.3vw,1.2rem);line-height:1.55;max-width:26em}
+.hero__cta{display:flex;flex-wrap:wrap;gap:.75rem}
+.hero__eye{display:block;color:var(--white);margin-bottom:clamp(1rem,2vw,1.75rem)}
+.js .hero__eye,.js .hero__side,.js .hero__meta,.js .quick{opacity:0;transform:translateY(18px);transition:opacity 1s var(--ease) .75s,transform 1s var(--ease) .75s}
+.js .hero__eye{transition-delay:.15s}
+.js .quick{transition-delay:.95s}
+.js.ready .hero__eye,.js.ready .hero__side,.js.ready .hero__meta,.js.ready .quick{opacity:1;transform:none}
+.quick{display:grid;grid-template-columns:1fr 1fr 1fr auto;margin-top:clamp(1.75rem,3.2vw,2.75rem);background:var(--ivory);color:var(--espresso)}
+.quick__f{display:grid;gap:.15rem;padding:.95rem 1.5rem .85rem;border-right:1px solid var(--line)}
+.quick__f label{font-size:.66rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--olive-deep)}
+.quick__f input,.quick__f select{font:inherit;font-size:1rem;color:var(--espresso);background:transparent;border:0;border-radius:0;padding:.2rem 0;min-height:2rem;width:100%;-webkit-appearance:none;appearance:none}
+.hero .quick :focus-visible{outline-color:var(--olive)}
+.quick .btn{min-height:100%;padding:0 2.25rem}
+@media (min-width:1081px){.hero .hero__meta{display:none}}
+@media (max-width:1080px){.quick{display:none}}
+.hero__meta{display:flex;justify-content:space-between;gap:1rem;margin-top:clamp(1.75rem,4vw,3.25rem);padding-top:1.1rem;border-top:1px solid var(--line-light);font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase}
+
+/* Philosophy */
+.sec{padding-block:var(--section)}
+.philo__grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(1rem,2vw,2rem);align-items:center}
+.philo__img{grid-column:1/7;aspect-ratio:4/5}
+.philo__txt{grid-column:8/13}
+.philo__txt h2{margin:1.5rem 0 2rem}
+.facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:clamp(1.5rem,3vw,3rem);margin-top:2.75rem;padding-top:1.75rem;border-top:1px solid var(--line)}
+.facts dt{font-family:var(--serif);font-size:clamp(1.9rem,2.8vw,2.6rem);line-height:1}
+.facts dd{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--olive-deep);margin-top:.5rem}
+
+/* Hotel */
+.hotel{background:var(--white)}
+.sec__head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(1rem,2vw,2rem);row-gap:1.5rem;align-items:end;margin-bottom:clamp(3rem,6vw,5.5rem)}
+.sec__head > div:first-child{grid-column:1/8}
+.sec__head > div:first-child h2{margin-top:1.5rem}
+.sec__head > .body{grid-column:9/13}
+.collage{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(1rem,2vw,2rem);row-gap:clamp(2.5rem,6vw,6rem)}
+.collage figure{display:grid;gap:.9rem;align-content:start}
+.collage figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:.25rem 1rem;font-size:.82rem;color:rgba(48,43,37,.78)}
+.collage figcaption b{font-weight:500;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--espresso);white-space:nowrap}
+.c1{grid-column:1/8}.c1 .ph{aspect-ratio:3/2}
+.c2{grid-column:9/13;margin-top:clamp(3rem,9vw,9rem)}.c2 .ph{aspect-ratio:4/5}
+.c3{grid-column:2/6}.c3 .ph{aspect-ratio:3/4}
+.c4{grid-column:7/13;margin-top:clamp(2rem,7vw,7rem)}.c4 .ph{aspect-ratio:16/11}
+.c5{grid-column:1/5;margin-top:clamp(-5rem,-4vw,-1rem)}.c5 .ph{aspect-ratio:4/5}
+.c6{grid-column:6/10}.c6 .ph{aspect-ratio:3/4}
+
+.band{position:relative;min-height:min(78vh,760px);display:grid;align-items:end;color:var(--white);background:var(--espresso);overflow:hidden}
+.band .ph{position:absolute;inset:-8% 0;background:var(--espresso)}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(48,43,37,.05) 35%,rgba(48,43,37,.66))}
+.band__in{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;padding-block:clamp(2rem,5vw,4.5rem)}
+.band__in p{font-size:clamp(1.6rem,3.6vw,3.4rem);line-height:1.08;max-width:16em}
+.band__in .eyebrow{color:var(--white);white-space:nowrap;padding-bottom:.5rem}
+.sec__head > .body{font-size:1.05rem}
+/* Rooms */
+.rooms__list{display:grid;gap:clamp(4rem,9vw,8.5rem)}
+.room{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(1rem,2vw,2rem);align-items:center}
+.room__media{grid-column:1/7;aspect-ratio:5/6}
+.room__body{grid-column:8/13}
+.room:nth-child(even) .room__media{grid-column:7/13;order:2}
+.room:nth-child(even) .room__body{grid-column:1/6}
+.room__top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:.4rem 1rem;padding-bottom:1.1rem;border-bottom:1px solid var(--line);margin-bottom:1.75rem}
+.room__price{font-size:.8rem;letter-spacing:.06em;white-space:nowrap}
+.room__price b{font-family:var(--serif);font-weight:400;font-size:1.7rem;letter-spacing:0;font-variant-numeric:tabular-nums}
+.room h3{font-size:clamp(1.9rem,3.2vw,3rem);text-transform:uppercase;letter-spacing:.012em;margin-bottom:1.1rem}
+.specs{display:flex;flex-wrap:wrap;gap:.5rem 1.75rem;margin:1.6rem 0 1.4rem;font-size:.72rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase}
+.specs span + span{padding-left:1.75rem;border-left:1px solid var(--line)}
+.feats{display:grid;gap:.45rem;font-size:.95rem;color:rgba(48,43,37,.86)}
+.feats li{padding-left:1.4rem;position:relative}
+.feats li::before{content:"";position:absolute;left:0;top:.8em;width:.75rem;height:1px;background:var(--olive)}
+.room__cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2.1rem}
+.rooms__note{margin-top:clamp(2.5rem,5vw,4rem);font-size:.82rem;color:rgba(48,43,37,.72)}
+.swipe{display:none}
+
+/* Experiences */
+.exp{background:var(--espresso);color:var(--white)}
+.exp .eyebrow{color:var(--sand)}
+.exp .body{color:rgba(250,249,246,.8)}
+.exp__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(1rem,2vw,2rem)}
+.exp__item{display:grid;gap:1.35rem;align-content:start}
+.exp__item:nth-child(even){margin-top:clamp(2.5rem,6vw,6rem)}
+.exp__item .ph{aspect-ratio:3/4;background:#45403a}
+.exp__item .eyebrow{display:block;margin-bottom:.65rem}
+.exp__item p{font-size:.95rem;color:rgba(250,249,246,.8);margin-top:.6rem;max-width:22em}
+
+/* Gallery */
+.gal__grid{columns:3;column-gap:clamp(.75rem,1.6vw,1.5rem)}
+.gal__grid li{break-inside:avoid;margin-bottom:clamp(.75rem,1.6vw,1.5rem)}
+.gal__btn{display:block;width:100%;position:relative;text-align:left}
+.gal__btn .ph img{transition:transform 1.2s var(--ease)}
+.gal__btn:hover .ph.in img,.gal__btn:focus-visible .ph.in img{transform:scale(1.045)}
+.gal__cap{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;padding:2.5rem 1rem .9rem;font-size:.7rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--white);background:linear-gradient(transparent,rgba(48,43,37,.6));opacity:0;transition:opacity .5s var(--ease)}
+.gal__btn:hover .gal__cap,.gal__btn:focus-visible .gal__cap{opacity:1}
+
+/* Location */
+.loc{background:var(--limestone)}
+.loc__grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:clamp(1rem,2vw,2rem);row-gap:3rem;align-items:start}
+.loc__txt{grid-column:1/6}
+.loc__txt h2{margin:1.5rem 0 2rem}
+.loc__map{grid-column:7/13;background:var(--ivory);padding:clamp(.75rem,1.5vw,1.25rem)}
+.loc__map svg{display:block;width:100%;height:auto}
+.loc__map figcaption{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between;padding:.9rem .25rem .1rem;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--olive-deep)}
+.near{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1.25rem,2.5vw,2.5rem);margin-top:2.75rem;padding-top:1.75rem;border-top:1px solid rgba(48,43,37,.28)}
+.near h3{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.9rem}
+.near li{display:flex;justify-content:space-between;gap:.75rem;font-size:.92rem;padding:.4rem 0;border-bottom:1px solid rgba(48,43,37,.14)}
+.near li span:last-child{font-variant-numeric:tabular-nums;white-space:nowrap;color:rgba(48,43,37,.72)}
+.concept{display:inline-block;margin-top:1.75rem;padding:.55rem .85rem;border:1px solid rgba(48,43,37,.4);font-size:.74rem;line-height:1.5;max-width:36em}
+.loc__strip{grid-column:1/13;aspect-ratio:21/8}
+
+/* Journal */
+.jour__grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:clamp(1rem,2vw,2rem);align-items:start}
+.story{display:grid;gap:1.25rem;text-align:left;width:100%}
+.story .ph{aspect-ratio:4/5}
+.story:first-child .ph{aspect-ratio:5/6}
+.jour__grid li:nth-child(2){margin-top:clamp(2rem,5vw,5rem)}
+.story .ph img{transition:transform 1.2s var(--ease)}
+.story:hover .ph.in img{transform:scale(1.04)}
+.story h3{margin:.6rem 0 1rem}
+.story:hover .link{background-size:38% 1px}
+
+/* Final */
+.final{position:relative;min-height:min(92vh,900px);display:grid;place-items:center;text-align:center;color:var(--white);background:var(--espresso);overflow:hidden}
+.final .ph{position:absolute;inset:-8% 0;background:var(--espresso)}
+.final::after{content:"";position:absolute;inset:0;background:rgba(48,43,37,.42)}
+.final__in{position:relative;z-index:1;display:grid;justify-items:center;gap:1.75rem;padding-block:6rem}
+.final h2{font-size:clamp(2.2rem,6.4vw,6.2rem);max-width:13em}
+.final p{font-size:clamp(1rem,1.3vw,1.2rem);max-width:28em}
+
+/* Footer */
+.foot{background:var(--espresso);color:var(--white);padding-block:clamp(3.5rem,7vw,6rem) 5.25rem}
+.foot__grid{display:grid;grid-template-columns:1.5fr .8fr 1fr 1.3fr;gap:clamp(2rem,4vw,4rem)}
+.foot .mark{font-size:1.5rem}
+.foot p,.foot li,.foot address{font-size:.92rem;font-style:normal;color:rgba(250,249,246,.78)}
+.foot h3{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--sand);margin-bottom:1.1rem}
+.foot ul{display:grid;gap:.5rem}
+.foot a:hover,.foot .txt:hover{color:var(--white);text-decoration:underline;text-underline-offset:4px}
+.foot .txt{font-size:inherit;color:inherit;text-align:left}
+.news{display:flex;border-bottom:1px solid var(--line-light);margin-top:1rem}
+.news input{flex:1;min-width:0;background:transparent;border:0;color:var(--white);font:inherit;padding:.85rem 0}
+.news input::placeholder{color:rgba(250,249,246,.5)}
+.news button{font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;padding:0 0 0 1rem;color:var(--sand)}
+.news button:hover{color:var(--white)}
+.news__msg{min-height:1.5em;margin-top:.7rem;font-size:.82rem !important}
+.foot__base{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75rem 2rem;margin-top:clamp(3rem,6vw,5rem);padding-top:1.5rem;border-top:1px solid var(--line-light);font-size:.76rem;color:rgba(250,249,246,.62)}
+.foot__base div{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem}
+.foot__base .txt{font-size:.76rem}
+
+/* Dialogs */
+dialog{border:0;padding:0;color:var(--espresso);background:var(--ivory);max-width:none;max-height:none}
+dialog::backdrop{background:rgba(48,43,37,.62)}
+dialog[open]{animation:dlg .55s var(--ease)}
+dialog[open]::backdrop{animation:fade .45s ease}
+@keyframes dlg{from{opacity:0;transform:translateY(24px)}}
+@keyframes fade{from{opacity:0}}
+.x{position:absolute;top:.75rem;right:.75rem;width:2.75rem;height:2.75rem;display:grid;place-items:center;z-index:3;border-radius:50%;transition:background-color .3s}
+.x:hover{background:rgba(48,43,37,.08)}
+.x::before,.x::after{content:"";position:absolute;width:1.15rem;height:1px;background:currentColor;transform:rotate(45deg)}
+.x::after{transform:rotate(-45deg)}
+.sheet{width:min(1040px,100% - 2rem);max-height:calc(100dvh - 2rem);overflow:auto}
+.sheet__grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+.sheet__img{min-height:100%;aspect-ratio:auto}
+.sheet__img img{position:absolute;inset:0}
+.sheet__body{padding:clamp(2rem,4.5vw,3.75rem);padding-top:clamp(3.5rem,5vw,4rem)}
+.sheet__body h2{font-size:clamp(1.8rem,3.2vw,2.75rem);margin:.9rem 0 1.25rem}
+.sheet__body .body{max-width:none}
+.sheet__body h3{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;margin:1.9rem 0 .9rem}
+.sheet--text{width:min(720px,100% - 2rem)}
+.sheet--text .sheet__grid{grid-template-columns:1fr}
+.sheet--text .sheet__img{aspect-ratio:16/8;min-height:0}
+
+/* Booking */
+.book{width:min(1080px,100% - 2rem);max-height:calc(100dvh - 2rem);overflow:auto}
+.book__grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);min-height:min(700px,calc(100dvh - 2rem))}
+.book__aside{position:relative;background:var(--espresso);color:var(--white);display:flex;flex-direction:column;justify-content:space-between;padding:clamp(1.75rem,3.5vw,3rem);overflow:hidden}
+.book__aside .ph{position:absolute;inset:0;background:var(--espresso)}
+.book__aside .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(48,43,37,.55),rgba(48,43,37,.35) 45%,rgba(48,43,37,.86))}
+.book__aside > *:not(.ph){position:relative}
+.book__aside h2{font-size:clamp(1.7rem,2.8vw,2.5rem);margin-top:1rem}
+.book__aside .eyebrow{color:var(--sand)}
+.est{border-top:1px solid var(--line-light);padding-top:1.25rem;font-size:.9rem}
+.est b{display:block;font-family:var(--serif);font-weight:400;font-size:1.9rem;line-height:1.2;font-variant-numeric:tabular-nums}
+.demo{margin-top:1rem;font-size:.78rem;line-height:1.55;color:rgba(250,249,246,.82)}
+.book__main{padding:clamp(1.75rem,3.5vw,3rem);padding-top:clamp(3.25rem,4.5vw,3.75rem)}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:1.35rem 1.25rem}
+.f{display:grid;gap:.45rem;align-content:start;min-width:0}
+.f--full{grid-column:1/-1}
+.f label{font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase}
+.f input,.f select,.f textarea{width:100%;font:inherit;font-size:1rem;color:var(--espresso);background:var(--white);border:1px solid rgba(48,43,37,.3);border-radius:0;padding:.8rem .9rem;min-height:3.1rem;min-width:0;max-width:100%;-webkit-appearance:none;appearance:none;transition:border-color .3s}
+.f select{background-image:linear-gradient(45deg,transparent 50%,var(--espresso) 50%),linear-gradient(135deg,var(--espresso) 50%,transparent 50%);background-position:calc(100% - 1.15rem) 50%,calc(100% - .8rem) 50%;background-size:.36rem .36rem;background-repeat:no-repeat;padding-right:2.25rem}
+.f textarea{min-height:5.5rem;resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{outline:2px solid var(--olive);outline-offset:1px;border-color:var(--olive)}
+.f [aria-invalid="true"]{border-color:#9A3B2A}
+.err{font-size:.8rem;color:#8C3424;min-height:0}
+.err:empty{display:none}
+.form__foot{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;margin-top:.4rem}
+.form__foot p{font-size:.78rem;color:rgba(48,43,37,.72);max-width:26em}
+.done{display:none}
+.book.is-done .form-view{display:none}
+.book.is-done .done{display:block}
+.done h2{font-size:clamp(1.8rem,3vw,2.6rem);margin:.9rem 0 1.25rem}
+.sum{margin:1.75rem 0;border-top:1px solid var(--line)}
+.sum div{display:flex;justify-content:space-between;gap:1.5rem;padding:.75rem 0;border-bottom:1px solid var(--line);font-size:.94rem}
+.sum dt{font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;padding-top:.2rem}
+.sum dd{text-align:right}
+.notice{background:var(--limestone);padding:1rem 1.1rem;font-size:.86rem;line-height:1.55}
+
+/* Lightbox */
+.lb{width:100vw;height:100dvh;background:rgba(38,34,29,.97);color:var(--white)}
+.lb[open]{display:grid;grid-template-rows:auto 1fr auto}
+.lb__bar,.lb__foot{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem var(--gutter);font-size:.72rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase}
+.lb__stage{position:relative;min-height:0;display:grid;place-items:center;padding:0 var(--gutter)}
+.lb__stage img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;position:absolute;inset:0;margin:auto;transition:opacity .45s var(--ease)}
+.lb__stage img.sw{opacity:0}
+.lb .x{position:static}
+.lb .x:hover{background:rgba(250,249,246,.12)}
+.lb__nav{display:flex;gap:.5rem}
+.arrow{width:3rem;height:3rem;border:1px solid var(--line-light);display:grid;place-items:center;transition:background-color .3s,color .3s}
+.arrow:hover{background:var(--white);color:var(--espresso)}
+.arrow svg{width:1.1rem;height:1.1rem}
+
+/* Sound control */
+.snd{position:fixed;right:var(--gutter);bottom:max(1.1rem,env(safe-area-inset-bottom));z-index:50;display:inline-flex;align-items:center;gap:.7rem;height:44px;padding:0 1rem 0 .9rem;background:rgba(244,240,232,.94);color:var(--espresso);border:1px solid var(--line);font-size:.66rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);transition:background-color .4s var(--ease),color .4s var(--ease),border-color .4s var(--ease)}
+.snd:hover{background:var(--espresso);color:var(--white);border-color:var(--espresso)}
+.snd__bars{display:flex;align-items:center;gap:3px;height:14px}
+.snd__bars i{width:2px;height:14px;background:currentColor;transform:scaleY(.18);transition:transform .4s var(--ease)}
+.snd.on .snd__bars i{animation:bars 1.5s ease-in-out infinite alternate}
+.snd.on .snd__bars i:nth-child(2){animation-duration:1.1s;animation-delay:-.4s}
+.snd.on .snd__bars i:nth-child(3){animation-duration:1.9s;animation-delay:-.9s}
+@keyframes bars{from{transform:scaleY(.25)}to{transform:scaleY(1)}}
+.snd[hidden]{display:none}
+/* Tablet */
+@media (max-width:1080px){
+  .nav{display:none}
+  .burger{display:block}
+  .head__in{grid-template-columns:1fr auto}
+  .foot__grid{grid-template-columns:1fr 1fr}
+  .exp__grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:3rem}
+  .exp__item:nth-child(even){margin-top:3.5rem}
+  .near{grid-template-columns:1fr 1fr}
+  .near > div:last-child{grid-column:1/-1}
+}
+/* Touch targets */
+@media (max-width:1080px),(pointer:coarse){
+  .foot ul{gap:0}
+  .foot ul a,.foot .txt,.foot__base a,.foot address + p + p a{display:inline-flex;align-items:center;min-height:44px}
+  .foot__base{align-items:center}
+  .foot__base div{align-items:center;gap:0 1.5rem}
+  .news button{min-height:44px}
+  .collage figcaption{flex-direction:column}
+}
+/* Tablet portrait */
+@media (min-width:761px) and (max-width:920px){
+  .hero__side{display:block}
+  .hero__side p{max-width:30em}
+  .hero__cta{margin-top:1.5rem}
+  .sec__head{display:block}
+  .sec__head > .body{margin-top:1.25rem;max-width:36em}
+  .philo__img{grid-column:1/6}
+  .philo__txt{grid-column:7/13}
+  .facts{gap:1.25rem}
+  .room__media,.room:nth-child(even) .room__body{grid-column:1/7}
+  .room__body,.room:nth-child(even) .room__media{grid-column:7/13}
+  .room:nth-child(even) .room__body{padding-right:1rem}
+  .room__body{padding-left:1rem}
+  .room:nth-child(even) .room__body{padding-left:0}
+  .room__cta .btn{flex:1;padding:0 .9rem}
+  .specs{gap:.5rem 1.1rem}
+  .specs span + span{padding-left:1.1rem}
+  .loc__grid{display:block}
+  .loc__map{margin-top:3rem}
+  .near{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .near > div:last-child{grid-column:auto}
+  .loc__strip{margin-top:3rem;aspect-ratio:16/8}
+  .book__grid{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr)}
+}
+/* Mobile */
+@media (max-width:760px){
+  :root{--head:64px;--section:4.5rem}
+  .mark{font-size:1rem;letter-spacing:.24em}
+  .head__in{gap:.75rem}
+  .head .btn{min-height:2.75rem;padding:0 1.05rem;font-size:.66rem;letter-spacing:.16em}
+  .head .lg{display:none}
+  .head .sm{display:inline}
+  .head__cta{gap:.25rem}
+  .hero__side{display:block}
+  .room__top .eyebrow{font-size:.64rem;letter-spacing:.14em;white-space:nowrap}
+  .hero__cta{margin-top:1.5rem}
+  .hero h1 .ln{white-space:normal}
+  .hero__meta{font-size:.62rem;letter-spacing:.16em;justify-content:flex-start;gap:1.5rem}
+  .hero h1{font-size:clamp(2.3rem,12vw,4.2rem)}
+  .hero__img img{object-position:50% 50%}
+  .hero__cta .btn{flex:1 1 100%}
+  .hero__meta span:nth-child(2){display:none}
+  .philo__grid,.sec__head,.loc__grid{display:block}
+  .philo__img{aspect-ratio:4/5;margin-right:calc(var(--gutter)*1.5);margin-bottom:2.5rem}
+  .facts{gap:1.25rem;grid-template-columns:repeat(3,1fr)}
+  .sec__head > .body{margin-top:1.25rem}
+  .collage{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:.75rem;row-gap:1.75rem}
+  .collage figure{grid-column:auto;margin-top:0;min-width:0}
+  .collage .c1,.collage .c4{grid-column:1/-1}
+  .collage .c2,.collage .c6{margin-top:2.25rem}
+  .collage figcaption b{white-space:normal;font-size:.66rem;letter-spacing:.16em}
+  .c1 .ph{aspect-ratio:4/3}.c2 .ph,.c3 .ph,.c5 .ph,.c6 .ph{aspect-ratio:3/4}.c4 .ph{aspect-ratio:4/3}
+  .collage figcaption span{display:none}
+  .rooms__list{display:flex;gap:.9rem;overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:calc(var(--gutter)*-1);padding-inline:var(--gutter);scroll-padding-inline:var(--gutter);scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .rooms__list::-webkit-scrollbar{display:none}
+  .room{flex:0 0 84%;display:block;scroll-snap-align:start}
+  .room__media{aspect-ratio:4/5;margin-bottom:1.25rem}
+  .room h3{font-size:1.65rem}
+  .room__top{margin-bottom:1.1rem;padding-bottom:.8rem}
+  .room .body{font-size:.94rem}
+  .feats li:nth-child(n+4){display:none}
+  .specs{gap:.4rem 1rem;margin:1.1rem 0 1rem;font-size:.66rem}
+  .specs span + span{padding-left:1rem}
+  .room__cta .btn{flex:1;padding:0 .75rem}
+  .swipe{display:flex;justify-content:space-between;margin-top:1.5rem;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--olive-deep)}
+  .exp__grid{column-gap:.75rem;row-gap:2.25rem}
+  .exp__item:nth-child(even){margin-top:2.25rem}
+  .exp__item h3{font-size:1.3rem}
+  .exp__item p{font-size:.88rem}
+  .gal__grid{columns:2}
+  .gal__cap{display:none}
+  .loc__map{margin-top:2.5rem}
+  .near{grid-template-columns:1fr;gap:1.75rem}
+  .loc__strip{aspect-ratio:4/3;margin-top:2.5rem}
+  .jour__grid{display:flex;gap:.9rem;overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:calc(var(--gutter)*-1);padding-inline:var(--gutter);scroll-padding-inline:var(--gutter);scrollbar-width:none}
+  .jour__grid::-webkit-scrollbar{display:none}
+  .jour__grid li{flex:0 0 78%;scroll-snap-align:start;margin-top:0 !important}
+  .story .ph,.story:first-child .ph{aspect-ratio:4/5}
+  .final{min-height:78vh}
+  .band{min-height:68vh}
+  .band__in{display:block}
+  .band__in .eyebrow{display:block;margin-top:1rem}
+  .foot__grid{grid-template-columns:minmax(0,1fr);gap:2.5rem}
+  .sheet__grid,.book__grid{grid-template-columns:1fr}
+  .sheet__img{aspect-ratio:4/3;min-height:0}
+  .book__aside{min-height:0;gap:1.5rem;padding-top:3.25rem}
+  .form{grid-template-columns:1fr 1fr;gap:1.1rem .75rem}
+  .f--m{grid-column:1/-1}
+  .form__foot .btn{width:100%}
+  .done .room__cta{flex-direction:column}
+  .done .room__cta .btn{flex:none;width:100%}
+  .book .x{color:var(--white)}
+  .book .x:hover{background:rgba(250,249,246,.14)}
+  .sheet__body .room__top .btn{flex:1 1 100%;margin-top:.5rem}
+  h2{font-size:clamp(1.7rem,8vw,2.4rem)}
+  .final h2{font-size:clamp(1.7rem,8.4vw,2.6rem)}
+  .band__in p{font-size:clamp(1.45rem,6.6vw,2rem)}
+}
+@media (max-width:400px){
+  .form{grid-template-columns:1fr}
+  .sheet__body{padding:3.25rem 1.35rem 1.5rem}
+  .sheet__body h2{font-size:1.5rem}
+  .done h2{font-size:1.6rem}
+  .book__main,.book__aside{padding-inline:1.25rem}
+  .room__cta .btn{flex:1 1 100%}
+  .hero__meta span:first-child{display:none}
+  .facts{grid-template-columns:repeat(3,minmax(0,1fr));gap:.9rem}
+  .facts dd{letter-spacing:.1em;font-size:.66rem}
+}
+@media (max-width:340px){
+  .mark{font-size:.9rem;letter-spacing:.2em}
+  .mark span{letter-spacing:.2em}
+  .room{flex-basis:88%}
+  .room h3{font-size:1.3rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important;transition-delay:0s !important}
+  .js .ph.rvl.par img,.hero__img img{transform:none !important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="head" id="head">
+  <div class="wrap head__in">
+    <a class="mark" href="#top" aria-label="SOLÉA HOUSE, back to top">Soléa<span>House</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#hotel">The Hotel</a>
+      <a href="#rooms">Rooms &amp; Suites</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#location">Location</a>
+    </nav>
+    <div class="head__cta">
+      <button class="btn" type="button" data-book aria-label="Book your stay"><span class="lg">Book your stay</span><span class="sm" aria-hidden="true">Book</span></button>
+      <button class="burger" type="button" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" inert>
+  <nav aria-label="Mobile">
+    <ul>
+      <li><a style="--i:0" href="#hotel">The Hotel</a></li>
+      <li><a style="--i:1" href="#rooms">Rooms &amp; Suites</a></li>
+      <li><a style="--i:2" href="#experiences">Experiences</a></li>
+      <li><a style="--i:3" href="#gallery">Gallery</a></li>
+      <li><a style="--i:4" href="#location">Location</a></li>
+      <li><a style="--i:5" href="#journal">Journal</a></li>
+    </ul>
+  </nav>
+  <div class="menu__foot">
+    <button class="btn btn--light" type="button" data-book>Book your stay</button>
+    <span>Mallorca, Spain. A hospitality concept by INVITÉ Studio.</span>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="hero" id="top" aria-label="Welcome">
+  <div class="hero__img"><img src="https://images.unsplash.com/photo-1603034203013-d532350372c6?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1603034203013-d532350372c6?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1603034203013-d532350372c6?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1603034203013-d532350372c6?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1603034203013-d532350372c6?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1603034203013-d532350372c6?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1603034203013-d532350372c6" loading="eager" fetchpriority="high" decoding="async" alt="A long swimming pool beside a stone house and a mature tree in warm Mediterranean light" sizes="100vw"></div>
+  <div class="wrap hero__in">
+    <div class="hero__grid">
+      <span class="eyebrow hero__eye">Boutique hotel in Mallorca</span>
+      <h1 class="display"><span class="ln"><span style="--i:0">Not just a stay.</span></span><span class="ln"><span style="--i:1">A feeling.</span></span></h1>
+      <div class="hero__side">
+        <p>A private Mediterranean escape, shaped by light, nature and the art of slowing down.</p>
+        <div class="hero__cta">
+          <a class="btn btn--light" href="#philosophy">Discover Soléa</a>
+          <button class="btn btn--ghost" type="button" data-book>Book your stay</button>
+        </div>
+      </div>
+    </div>
+    <div class="hero__meta"><span>Mallorca, Spain</span><span>24 rooms &amp; suites</span><span>Open March to November</span></div>
+    <form class="quick" id="quick" aria-label="Start a booking inquiry" novalidate>
+      <div class="quick__f"><label for="q-in">Check-in</label><input id="q-in" type="date" name="checkin"></div>
+      <div class="quick__f"><label for="q-out">Check-out</label><input id="q-out" type="date" name="checkout"></div>
+      <div class="quick__f"><label for="q-g">Guests</label><select id="q-g" name="guests"><option value="1">1 guest</option><option value="2" selected>2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option></select></div>
+      <button class="btn" type="submit">Check availability</button>
+    </form>
+  </div>
+</section>
+
+<section class="sec philo" id="philosophy" aria-labelledby="philo-h">
+  <div class="wrap philo__grid">
+    <div class="ph rvl par philo__img"><img src="https://images.unsplash.com/photo-1683320553264-e31acd4196e7?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1683320553264-e31acd4196e7?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1683320553264-e31acd4196e7?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1683320553264-e31acd4196e7?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1683320553264-e31acd4196e7?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1683320553264-e31acd4196e7?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1683320553264-e31acd4196e7" loading="lazy" decoding="async" alt="An olive tree in a terracotta pot in front of a weathered stone facade" sizes="(max-width:760px) 85vw, 48vw"></div>
+    <div class="philo__txt">
+      <span class="eyebrow rv">The Philosophy</span>
+      <h2 class="rv" id="philo-h" style="--d:.08s">A different kind of escape</h2>
+      <p class="body rv" style="--d:.16s">Hidden among the Mediterranean landscape of Mallorca, SOLÉA HOUSE is a place designed for those who appreciate the quieter things in life.</p>
+      <p class="body rv" style="--d:.22s">Natural materials, thoughtful architecture and moments of stillness come together to create an experience that feels both intimate and unforgettable.</p>
+      <dl class="facts rv" style="--d:.3s">
+        <div><dt>24</dt><dd>Rooms &amp; suites</dd></div>
+        <div><dt>3 ha</dt><dd>Olive gardens</dd></div>
+        <div><dt>25 m</dt><dd>Limestone pool</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="sec hotel" id="hotel" aria-labelledby="hotel-h">
+  <div class="wrap">
+    <div class="sec__head">
+      <div><span class="eyebrow rv">The Hotel</span><h2 class="rv" id="hotel-h" style="--d:.08s">Where architecture meets nature</h2></div>
+      <p class="body rv" style="--d:.16s">A restored stone estate and a handful of low garden pavilions, set between olive terraces. Every wall is local limestone or lime plaster. Every room opens to the air.</p>
+    </div>
+    <div class="collage">
+      <figure class="c1"><div class="ph rvl"><img src="https://images.unsplash.com/photo-1623421851403-15b5be5f5b24?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1623421851403-15b5be5f5b24?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1623421851403-15b5be5f5b24?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1623421851403-15b5be5f5b24?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1623421851403-15b5be5f5b24?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1623421851403-15b5be5f5b24?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1623421851403-15b5be5f5b24" loading="lazy" decoding="async" alt="A low stone building with a shaded patio among clipped shrubs" sizes="(max-width:760px) 92vw, 56vw"></div><figcaption><b>Limestone architecture</b><span>The original estate house, rebuilt stone by stone.</span></figcaption></figure>
+      <figure class="c2"><div class="ph rvl" style="--d:.1s"><img src="https://images.unsplash.com/photo-1673147056688-4df20283643b?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1673147056688-4df20283643b?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1673147056688-4df20283643b?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1673147056688-4df20283643b?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1673147056688-4df20283643b?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1673147056688-4df20283643b?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1673147056688-4df20283643b" loading="lazy" decoding="async" alt="A swimming pool reflecting a white open pavilion at golden hour" sizes="(max-width:760px) 46vw, 30vw"></div><figcaption><b>Swimming pool</b><span>Twenty-five metres, unheated by design.</span></figcaption></figure>
+      <figure class="c3"><div class="ph rvl"><img src="https://images.unsplash.com/photo-1544475925-9199e8ed85ab?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1544475925-9199e8ed85ab?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1544475925-9199e8ed85ab?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1544475925-9199e8ed85ab?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1544475925-9199e8ed85ab?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1544475925-9199e8ed85ab?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1544475925-9199e8ed85ab" loading="lazy" decoding="async" alt="An old olive tree growing among pale rocks" sizes="(max-width:760px) 46vw, 30vw"></div><figcaption><b>Mediterranean gardens</b><span>Olive, carob, rosemary and wild fennel.</span></figcaption></figure>
+      <figure class="c4"><div class="ph rvl par" style="--d:.1s"><img src="https://images.unsplash.com/photo-1705268887866-e7344529b540?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1705268887866-e7344529b540?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1705268887866-e7344529b540?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1705268887866-e7344529b540?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1705268887866-e7344529b540?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1705268887866-e7344529b540?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1705268887866-e7344529b540" loading="lazy" decoding="async" alt="A view through a white plaster arch towards palms and the sea" sizes="(max-width:760px) 92vw, 48vw"></div><figcaption><b>Open-air spaces</b><span>Arches and loggias in place of corridors.</span></figcaption></figure>
+      <figure class="c5"><div class="ph rvl"><img src="https://images.unsplash.com/photo-1781183955329-6edb3d53b8d9?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1781183955329-6edb3d53b8d9?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1781183955329-6edb3d53b8d9?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1781183955329-6edb3d53b8d9?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1781183955329-6edb3d53b8d9?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1781183955329-6edb3d53b8d9?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1781183955329-6edb3d53b8d9" loading="lazy" decoding="async" alt="A sunny private terrace with a wooden deck and whitewashed walls" sizes="(max-width:760px) 46vw, 30vw"></div><figcaption><b>Private terraces</b><span>One for every room and suite.</span></figcaption></figure>
+      <figure class="c6"><div class="ph rvl" style="--d:.1s"><img src="https://images.unsplash.com/photo-1672865362636-2a1c08284ede?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1672865362636-2a1c08284ede?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1672865362636-2a1c08284ede?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1672865362636-2a1c08284ede?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1672865362636-2a1c08284ede?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1672865362636-2a1c08284ede?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1672865362636-2a1c08284ede" loading="lazy" decoding="async" alt="A curved lime-plaster staircase with a small potted plant" sizes="(max-width:760px) 46vw, 30vw"></div><figcaption><b>Natural materials</b><span>Lime plaster, linen, clay and oak.</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-label="The pool terrace">
+  <div class="ph par"><img src="https://images.unsplash.com/photo-1603033825246-53b4d1e5c509?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1603033825246-53b4d1e5c509?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1603033825246-53b4d1e5c509?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1603033825246-53b4d1e5c509?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1603033825246-53b4d1e5c509?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1603033825246-53b4d1e5c509?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1603033825246-53b4d1e5c509" loading="lazy" decoding="async" style="object-position:50% 60%" alt="A long stone-edged pool set in dry grass, looking out to the hills" sizes="100vw"></div>
+  <div class="wrap band__in">
+    <p class="display rv">Built from the island&rsquo;s own stone. Kept deliberately small.</p>
+    <span class="eyebrow rv" style="--d:.1s">The pool terrace</span>
+  </div>
+</section>
+
+<section class="sec rooms" id="rooms" aria-labelledby="rooms-h">
+  <div class="wrap">
+    <div class="sec__head">
+      <div><span class="eyebrow rv">Rooms &amp; Suites</span><h2 class="rv" id="rooms-h" style="--d:.08s">Four ways to stay</h2></div>
+      <p class="body rv" style="--d:.16s">Rates are per night for two guests and include breakfast in the garden. All prices in euro.</p>
+    </div>
+    <div class="rooms__list" id="rooms-list">
+      <article class="room" data-room="garden">
+        <div class="ph rvl room__media"><img src="https://images.unsplash.com/photo-1722942723511-11c7603d003c?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1722942723511-11c7603d003c?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1722942723511-11c7603d003c?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1722942723511-11c7603d003c?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1722942723511-11c7603d003c?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1722942723511-11c7603d003c?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1722942723511-11c7603d003c" loading="lazy" decoding="async" alt="A calm bedroom with a wide bed, pale linen and a plant by the window" sizes="(max-width:760px) 84vw, 48vw"></div>
+        <div class="room__body">
+          <div class="room__top rv"><span class="eyebrow">Garden level</span><span class="room__price">from <b>€220</b> / night</span></div>
+          <h3 class="rv">The Garden Room</h3>
+          <p class="body rv">A ground-floor room that opens straight onto the olive garden, with a shaded patio for the first coffee of the day.</p>
+          <div class="specs rv"><span>28 m²</span><span>2 guests</span><span>King bed</span></div>
+          <ul class="feats rv"><li>Private garden patio</li><li>Rain shower in tadelakt plaster</li><li>Washed linen bedding</li><li>Garden breakfast included</li></ul>
+          <div class="room__cta rv"><button class="btn btn--line" type="button" data-details="garden">View details</button><button class="btn" type="button" data-book="garden">Book now</button></div>
+        </div>
+      </article>
+      <article class="room" data-room="terrace">
+        <div class="ph rvl room__media"><img src="https://images.unsplash.com/photo-1552558636-f6a8f071c2b3?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1552558636-f6a8f071c2b3?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1552558636-f6a8f071c2b3?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1552558636-f6a8f071c2b3?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1552558636-f6a8f071c2b3?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1552558636-f6a8f071c2b3?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1552558636-f6a8f071c2b3" loading="lazy" decoding="async" alt="Morning sun falling across a linen bed and a rough plaster wall" sizes="(max-width:760px) 84vw, 48vw"></div>
+        <div class="room__body">
+          <div class="room__top rv"><span class="eyebrow">First floor</span><span class="room__price">from <b>€310</b> / night</span></div>
+          <h3 class="rv">The Terrace Suite</h3>
+          <p class="body rv">Raised above the gardens, with a furnished terrace that catches the morning sun and holds the evening breeze.</p>
+          <div class="specs rv"><span>42 m²</span><span>2 guests</span><span>King bed</span></div>
+          <ul class="feats rv"><li>14 m² furnished terrace</li><li>Sitting area with daybed</li><li>Walk-in shower and double basin</li><li>Garden and hill views</li></ul>
+          <div class="room__cta rv"><button class="btn btn--line" type="button" data-details="terrace">View details</button><button class="btn" type="button" data-book="terrace">Book now</button></div>
+        </div>
+      </article>
+      <article class="room" data-room="mediterranean">
+        <div class="ph rvl room__media"><img src="https://images.unsplash.com/photo-1759472659432-3232e42d04d2?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1759472659432-3232e42d04d2?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1759472659432-3232e42d04d2?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1759472659432-3232e42d04d2?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1759472659432-3232e42d04d2?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1759472659432-3232e42d04d2?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1759472659432-3232e42d04d2" loading="lazy" decoding="async" alt="A suite bedroom with a woven ceiling, an arched window and a handwoven rug" sizes="(max-width:760px) 84vw, 48vw"></div>
+        <div class="room__body">
+          <div class="room__top rv"><span class="eyebrow">Estate house</span><span class="room__price">from <b>€390</b> / night</span></div>
+          <h3 class="rv">The Mediterranean Suite</h3>
+          <p class="body rv">Inside the old estate house, behind metre-thick stone walls. A separate living room, a deep soaking tub and a terrace facing the sea.</p>
+          <div class="specs rv"><span>58 m²</span><span>Up to 3 guests</span><span>King bed + daybed</span></div>
+          <ul class="feats rv"><li>Separate living room</li><li>Stone bathroom with soaking tub</li><li>Sea-facing terrace</li><li>Original exposed limestone walls</li></ul>
+          <div class="room__cta rv"><button class="btn btn--line" type="button" data-details="mediterranean">View details</button><button class="btn" type="button" data-book="mediterranean">Book now</button></div>
+        </div>
+      </article>
+      <article class="room" data-room="pool">
+        <div class="ph rvl room__media"><img src="https://images.unsplash.com/photo-1756707581956-f62b76e9ea73?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1756707581956-f62b76e9ea73?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1756707581956-f62b76e9ea73?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1756707581956-f62b76e9ea73?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1756707581956-f62b76e9ea73?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1756707581956-f62b76e9ea73?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1756707581956-f62b76e9ea73" loading="lazy" decoding="async" alt="A small private pool in dappled sunlight surrounded by lush planting" sizes="(max-width:760px) 84vw, 48vw"></div>
+        <div class="room__body">
+          <div class="room__top rv"><span class="eyebrow">Garden pavilion</span><span class="room__price">from <b>€520</b> / night</span></div>
+          <h3 class="rv">The Private Pool Suite</h3>
+          <p class="body rv">A freestanding pavilion in its own walled garden, with a plunge pool that belongs to no one but you.</p>
+          <div class="specs rv"><span>76 m²</span><span>Up to 4 guests</span><span>King bed + twin room</span></div>
+          <ul class="feats rv"><li>Private 6 m plunge pool</li><li>Walled garden with outdoor shower</li><li>Two bedrooms, two bathrooms</li><li>Breakfast served in the suite</li></ul>
+          <div class="room__cta rv"><button class="btn btn--line" type="button" data-details="pool">View details</button><button class="btn" type="button" data-book="pool">Book now</button></div>
+        </div>
+      </article>
+    </div>
+    <div class="swipe" aria-hidden="true"><span>Swipe to see all four</span><span id="swipe-n">1 / 4</span></div>
+    <p class="rooms__note rv">Room sizes, features and rates are illustrative. SOLÉA HOUSE is a concept hotel.</p>
+  </div>
+</section>
+
+<section class="sec exp on-dark" id="experiences" aria-labelledby="exp-h">
+  <div class="wrap">
+    <div class="sec__head">
+      <div><span class="eyebrow rv">Experiences</span><h2 class="rv" id="exp-h" style="--d:.08s">Time, well spent</h2></div>
+      <p class="body rv" style="--d:.16s">No programme and nothing to sign up for. Four good ways to pass a day.</p>
+    </div>
+    <div class="exp__grid">
+      <article class="exp__item"><div class="ph rvl"><img src="https://images.unsplash.com/photo-1638826108040-8205e0323486?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1638826108040-8205e0323486?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1638826108040-8205e0323486?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1638826108040-8205e0323486?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1638826108040-8205e0323486?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1638826108040-8205e0323486?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1638826108040-8205e0323486" loading="lazy" decoding="async" alt="A breakfast table from above with fruit, coffee and white hydrangeas" sizes="(max-width:760px) 46vw, (max-width:1080px) 46vw, 23vw"></div><div class="rv"><span class="eyebrow">Morning</span><h3>Slow Mornings</h3><p>Breakfast surrounded by Mediterranean light.</p></div></article>
+      <article class="exp__item"><div class="ph rvl" style="--d:.08s"><img src="https://images.unsplash.com/photo-1775204213252-ede0800e5d2a?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1775204213252-ede0800e5d2a?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1775204213252-ede0800e5d2a?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1775204213252-ede0800e5d2a?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1775204213252-ede0800e5d2a?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1775204213252-ede0800e5d2a?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1775204213252-ede0800e5d2a" loading="lazy" decoding="async" alt="A sun lounger beside shimmering pool water" sizes="(max-width:760px) 46vw, (max-width:1080px) 46vw, 23vw"></div><div class="rv"><span class="eyebrow">Midday</span><h3>By The Water</h3><p>Relaxation beside the pool.</p></div></article>
+      <article class="exp__item"><div class="ph rvl" style="--d:.16s"><img src="https://images.unsplash.com/photo-1623392666017-033f5697f696?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1623392666017-033f5697f696?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1623392666017-033f5697f696?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1623392666017-033f5697f696?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1623392666017-033f5697f696?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1623392666017-033f5697f696?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1623392666017-033f5697f696" loading="lazy" decoding="async" alt="A narrow village lane with honey-coloured stone houses and green shutters" sizes="(max-width:760px) 46vw, (max-width:1080px) 46vw, 23vw"></div><div class="rv"><span class="eyebrow">Afternoon</span><h3>Local Discoveries</h3><p>Explore the character and beauty of Mallorca.</p></div></article>
+      <article class="exp__item"><div class="ph rvl" style="--d:.24s"><img src="https://images.unsplash.com/photo-1769622341465-b7063e544338?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1769622341465-b7063e544338?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1769622341465-b7063e544338?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1769622341465-b7063e544338?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1769622341465-b7063e544338?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1769622341465-b7063e544338?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1769622341465-b7063e544338" loading="lazy" decoding="async" alt="A garden table and chairs under a pine at sunset, with the sea beyond" sizes="(max-width:760px) 46vw, (max-width:1080px) 46vw, 23vw"></div><div class="rv"><span class="eyebrow">Evening</span><h3>Golden Evenings</h3><p>Sunset dining and intimate outdoor moments.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec gal" id="gallery" aria-labelledby="gal-h">
+  <div class="wrap">
+    <div class="sec__head">
+      <div><span class="eyebrow rv">Gallery</span><h2 class="rv" id="gal-h" style="--d:.08s">Stone, water, light</h2></div>
+      <p class="body rv" style="--d:.16s">Select any photograph to view it full screen.</p>
+    </div>
+    <ul class="gal__grid" id="gal">
+      <li><button class="gal__btn" type="button" data-cat="Architecture"><div class="ph rvl" style="aspect-ratio:3/4"><img src="https://images.unsplash.com/photo-1683320553290-71288bcc0910?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1683320553290-71288bcc0910?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1683320553290-71288bcc0910?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1683320553290-71288bcc0910?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1683320553290-71288bcc0910?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1683320553290-71288bcc0910?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1683320553290-71288bcc0910" loading="lazy" decoding="async" alt="An olive tree in a clay pot against an ochre stone wall with a tall window" sizes="(max-width:760px) 46vw, 31vw"></div></button></li>
+      <li><button class="gal__btn" type="button" data-cat="Landscape"><div class="ph rvl" style="aspect-ratio:1/1"><img src="https://images.unsplash.com/photo-1663154439286-5804c8448169?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1663154439286-5804c8448169?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1663154439286-5804c8448169?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1663154439286-5804c8448169?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1663154439286-5804c8448169?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1663154439286-5804c8448169?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1663154439286-5804c8448169" loading="lazy" decoding="async" alt="Turquoise water in a narrow rocky cove seen from above" sizes="(max-width:760px) 46vw, 31vw"></div></button></li>
+      <li><button class="gal__btn" type="button" data-cat="Interiors"><div class="ph rvl" style="aspect-ratio:4/5"><img src="https://images.unsplash.com/photo-1763485956023-49c4a03283fd?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1763485956023-49c4a03283fd?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1763485956023-49c4a03283fd?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1763485956023-49c4a03283fd?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1763485956023-49c4a03283fd?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1763485956023-49c4a03283fd?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1763485956023-49c4a03283fd" loading="lazy" decoding="async" alt="A bathroom with a carved stone basin and an arched mirror" sizes="(max-width:760px) 46vw, 31vw"></div></button></li>
+      <li><button class="gal__btn" type="button" data-cat="Pool"><div class="ph rvl" style="aspect-ratio:4/5"><img src="https://images.unsplash.com/photo-1757503745964-c76d18d947e4?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1757503745964-c76d18d947e4?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1757503745964-c76d18d947e4?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1757503745964-c76d18d947e4?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1757503745964-c76d18d947e4?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1757503745964-c76d18d947e4?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1757503745964-c76d18d947e4" loading="lazy" decoding="async" style="object-position:50% 70%" alt="Sun loungers under a parasol beside the pool, framed by trees" sizes="(max-width:760px) 46vw, 31vw"></div></button></li>
+      <li><button class="gal__btn" type="button" data-cat="Food"><div class="ph rvl" style="aspect-ratio:3/4"><img src="https://images.unsplash.com/photo-1748540459503-19efc015143b?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1748540459503-19efc015143b?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1748540459503-19efc015143b?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1748540459503-19efc015143b?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1748540459503-19efc015143b?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1748540459503-19efc015143b?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1748540459503-19efc015143b" loading="lazy" decoding="async" alt="A wooden table laid with shared plates, seen from above" sizes="(max-width:760px) 46vw, 31vw"></div></button></li>
+      <li><button class="gal__btn" type="button" data-cat="Textures"><div class="ph rvl" style="aspect-ratio:3/2"><img src="https://images.unsplash.com/photo-1707211711417-72ebdc991f89?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1707211711417-72ebdc991f89?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1707211711417-72ebdc991f89?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1707211711417-72ebdc991f89?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1707211711417-72ebdc991f89?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1707211711417-72ebdc991f89?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1707211711417-72ebdc991f89" loading="lazy" decoding="async" alt="A dry-stone wall of stacked honey-coloured rock" sizes="(max-width:760px) 46vw, 31vw"></div></button></li>
+      <li><button class="gal__btn" type="button" data-cat="Details"><div class="ph rvl" style="aspect-ratio:3/4"><img src="https://images.unsplash.com/photo-1690832307571-d78b5d346651?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1690832307571-d78b5d346651?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1690832307571-d78b5d346651?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1690832307571-d78b5d346651?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1690832307571-d78b5d346651?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1690832307571-d78b5d346651?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1690832307571-d78b5d346651" loading="lazy" decoding="async" alt="Green shutters opening onto a pool and the sea below" sizes="(max-width:760px) 46vw, 31vw"></div></button></li>
+      <li><button class="gal__btn" type="button" data-cat="Gardens"><div class="ph rvl" style="aspect-ratio:4/5"><img src="https://images.unsplash.com/photo-1690701170397-dcb83290e992?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1690701170397-dcb83290e992?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1690701170397-dcb83290e992?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1690701170397-dcb83290e992?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1690701170397-dcb83290e992?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1690701170397-dcb83290e992?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1690701170397-dcb83290e992" loading="lazy" decoding="async" alt="Olive branches against a sun-warmed terracotta wall" sizes="(max-width:760px) 46vw, 31vw"></div></button></li>
+      <li><button class="gal__btn" type="button" data-cat="Architecture"><div class="ph rvl" style="aspect-ratio:1/1"><img src="https://images.unsplash.com/photo-1705005424662-fe7f355224dc?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1705005424662-fe7f355224dc?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1705005424662-fe7f355224dc?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1705005424662-fe7f355224dc?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1705005424662-fe7f355224dc?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1705005424662-fe7f355224dc?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1705005424662-fe7f355224dc" loading="lazy" decoding="async" alt="A wooden ladder leaning on a whitewashed wall beside a stone-framed window" sizes="(max-width:760px) 46vw, 31vw"></div></button></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec loc" id="location" aria-labelledby="loc-h">
+  <div class="wrap loc__grid">
+    <div class="loc__txt">
+      <span class="eyebrow rv">Location</span>
+      <h2 class="rv" id="loc-h" style="--d:.08s">A place to find your own pace</h2>
+      <p class="body rv" style="--d:.16s">SOLÉA HOUSE is imagined in the quiet south-east of Mallorca, in the low hills behind Santanyí. Coves to the east, salt flats to the south, and stone villages that still keep a weekly market.</p>
+      <div class="near rv" style="--d:.22s">
+        <div><h3>Nearby beaches</h3><ul><li><span>Cala Llombards</span><span>12 min</span></li><li><span>Caló des Moro</span><span>15 min</span></li><li><span>Es Trenc</span><span>25 min</span></li></ul></div>
+        <div><h3>Local villages</h3><ul><li><span>Santanyí</span><span>8 min</span></li><li><span>Cas Concos</span><span>10 min</span></li><li><span>Ses Salines</span><span>15 min</span></li></ul></div>
+        <div><h3>Arriving</h3><ul><li><span>Palma de Mallorca Airport (PMI)</span><span>45 min</span></li><li><span>Palma old town</span><span>55 min</span></li></ul></div>
+      </div>
+      <p class="concept rv">Conceptual location. The hotel and its address are fictional. Place names are real, and drive times are illustrative estimates only.</p>
+    </div>
+    <figure class="loc__map rv" style="--d:.1s">
+      <svg viewBox="0 0 560 600" role="img" aria-labelledby="map-t map-d" font-family="Instrument Sans, Helvetica, Arial, sans-serif">
+        <title id="map-t">Conceptual map of south-east Mallorca</title>
+        <desc id="map-d">A schematic map, not to scale, showing the fictional position of SOLÉA HOUSE near Santanyí, with Cala Llombards, Caló des Moro, Es Trenc, Ses Salines and Cas Concos, and the direction of Palma airport.</desc>
+        <defs><pattern id="sea" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M0 5h10" stroke="#73765C" stroke-opacity=".28" stroke-width="1"/></pattern></defs>
+        <rect width="560" height="600" fill="#D9D0C2"/><rect width="560" height="600" fill="url(#sea)"/>
+        <path d="M0 0H452c8 40-14 62-4 98 9 32 30 44 26 82-3 30-26 40-24 72 2 28 22 38 16 70-5 28-30 36-40 62-9 24 4 44-14 66-17 21-44 18-62 40-15 18-12 44-34 50-24 7-38-16-62-22-28-7-48 8-76-4-24-10-30-34-56-42-22-7-42 4-66-6H0V0Z" fill="#F4F0E8" stroke="#302B25" stroke-opacity=".5" stroke-width="1"/>
+        <g stroke="#302B25" stroke-opacity=".3" stroke-width="1" fill="none"><path d="M262 286 96 96" stroke-dasharray="3 6"/><path d="M262 286l58 78M262 286l62-122M320 364l72 42M320 364l-112 82M208 446 96 470"/></g>
+        <g font-size="12" letter-spacing="1.3" fill="#302B25">
+          <g><rect x="315" y="359" width="10" height="10" fill="#302B25"/><text x="333" y="361">SANTANYÍ</text></g>
+          <g><rect x="319" y="159" width="10" height="10" fill="#302B25"/><text x="337" y="168">CAS CONCOS</text></g>
+          <g><rect x="203" y="441" width="10" height="10" fill="#302B25"/><text x="150" y="434">SES SALINES</text></g>
+          <g><circle cx="394" cy="408" r="6" fill="#F4F0E8" stroke="#302B25" stroke-width="1.5"/><text x="300" y="428">CALA LLOMBARDS</text></g>
+          <g><circle cx="372" cy="446" r="6" fill="#F4F0E8" stroke="#302B25" stroke-width="1.5"/><text x="268" y="466">CALÓ DES MORO</text></g>
+          <g><circle cx="94" cy="470" r="6" fill="#F4F0E8" stroke="#302B25" stroke-width="1.5"/><text x="24" y="452">ES TRENC</text></g>
+          <g><path d="m96 96 4 14-12-8Z" fill="#302B25"/><text x="28" y="72">PALMA AIRPORT (PMI)</text><text x="28" y="88" fill-opacity=".65">APPROX. 45 MIN</text></g>
+          <text x="470" y="330" fill="#575A44" letter-spacing="3" transform="rotate(90 470 330)">MEDITERRANEAN SEA</text>
+          <g transform="translate(510 44)"><path d="M0-22V22M-8-8 0-22 8-8" fill="none" stroke="#302B25" stroke-width="1.2"/><text x="-4.5" y="-28">N</text></g>
+        </g>
+        <g><circle cx="262" cy="286" r="20" fill="#73765C" fill-opacity=".18"/><circle cx="262" cy="286" r="8" fill="#73765C"/><text x="262" y="252" text-anchor="middle" font-family="Marcellus, Georgia, serif" font-size="19" letter-spacing="4.5" fill="#302B25">SOLÉA HOUSE</text></g>
+      </svg>
+      <figcaption><span>Conceptual map, not to scale</span><span>■ Village &nbsp; ○ Beach</span></figcaption>
+    </figure>
+    <div class="ph rvl par loc__strip"><img src="https://images.unsplash.com/photo-1561991928-2bfcff536e0e?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1561991928-2bfcff536e0e?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1561991928-2bfcff536e0e?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1561991928-2bfcff536e0e?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1561991928-2bfcff536e0e?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1561991928-2bfcff536e0e?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1561991928-2bfcff536e0e" loading="lazy" decoding="async" style="object-position:50% 62%" alt="A small sandy beach between limestone cliffs with clear turquoise water" sizes="(max-width:760px) 92vw, 90vw"></div>
+  </div>
+</section>
+
+<section class="sec jour" id="journal" aria-labelledby="jour-h">
+  <div class="wrap">
+    <div class="sec__head">
+      <div><span class="eyebrow rv">Journal</span><h2 class="rv" id="jour-h" style="--d:.08s">Notes from the island</h2></div>
+      <p class="body rv" style="--d:.16s">Short reads on how we live, eat and wander here.</p>
+    </div>
+    <ul class="jour__grid">
+      <li><button class="story" type="button" data-story="slow"><div class="ph rvl"><img src="https://images.unsplash.com/photo-1589271243958-d61e12b61b97?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1589271243958-d61e12b61b97?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1589271243958-d61e12b61b97?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1589271243958-d61e12b61b97?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1589271243958-d61e12b61b97?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1589271243958-d61e12b61b97?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1589271243958-d61e12b61b97" loading="lazy" decoding="async" alt="A small vase with a dried stem on a table beside rumpled linen" sizes="(max-width:760px) 78vw, 36vw"></div><div class="rv"><span class="eyebrow">Wellbeing</span><h3>The Beauty of Slow Living</h3><span class="link">Read story</span></div></button></li>
+      <li><button class="story" type="button" data-story="weekend"><div class="ph rvl" style="--d:.08s"><img src="https://images.unsplash.com/photo-1778168968332-bf5097f49a64?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1778168968332-bf5097f49a64?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1778168968332-bf5097f49a64?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1778168968332-bf5097f49a64?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1778168968332-bf5097f49a64?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1778168968332-bf5097f49a64?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1778168968332-bf5097f49a64" loading="lazy" decoding="async" alt="Stone houses scattered over a green Mallorcan hillside" sizes="(max-width:760px) 78vw, 29vw"></div><div class="rv"><span class="eyebrow">Travel</span><h3>A Weekend in Mallorca</h3><span class="link">Read story</span></div></button></li>
+      <li><button class="story" type="button" data-story="table"><div class="ph rvl" style="--d:.16s"><img src="https://images.unsplash.com/photo-1783455442171-16dbde079c53?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1783455442171-16dbde079c53?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1783455442171-16dbde079c53?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1783455442171-16dbde079c53?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1783455442171-16dbde079c53?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1783455442171-16dbde079c53?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1783455442171-16dbde079c53" loading="lazy" decoding="async" alt="A round tray of colourful small dishes on a patterned plate" sizes="(max-width:760px) 78vw, 29vw"></div><div class="rv"><span class="eyebrow">Food</span><h3>The Mediterranean Table</h3><span class="link">Read story</span></div></button></li>
+    </ul>
+  </div>
+</section>
+
+<section class="final" aria-labelledby="final-h">
+  <div class="ph par"><img src="https://images.unsplash.com/photo-1707075108813-edefd7b3308d?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1707075108813-edefd7b3308d?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1707075108813-edefd7b3308d?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1707075108813-edefd7b3308d?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1707075108813-edefd7b3308d?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1707075108813-edefd7b3308d?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1707075108813-edefd7b3308d" loading="lazy" decoding="async" alt="An infinity pool at dusk looking over a calm sea" sizes="100vw"></div>
+  <div class="wrap final__in">
+    <h2 class="rv" id="final-h">Your Mediterranean moment awaits</h2>
+    <p class="rv" style="--d:.1s">Discover a place where every detail invites you to slow down.</p>
+    <button class="btn btn--light rv" style="--d:.18s" type="button" data-book>Reserve your stay</button>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot on-dark">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <a class="mark" href="#top">Soléa<span>House</span></a>
+        <p style="margin-top:1.25rem;max-width:24em">A private Mediterranean escape in Mallorca. Not just a stay. A feeling.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h3>Explore</h3>
+        <ul><li><a href="#hotel">The Hotel</a></li><li><a href="#rooms">Rooms &amp; Suites</a></li><li><a href="#experiences">Experiences</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#location">Location</a></li><li><a href="#journal">Journal</a></li></ul>
+      </nav>
+      <div>
+        <h3>Contact</h3>
+        <address>Camí de la Llum, s/n<br>07650 Mallorca, Spain<br><br>hello@soleahouse.example<br>+34 000 000 000</address>
+        <p style="margin-top:.9rem;font-size:.8rem">Placeholder details for a fictional hotel.</p>
+        <p style="margin-top:.9rem"><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram @soleahouse (placeholder)</a></p>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <p>Seasonal notes from the house, four times a year.</p>
+        <form class="news" id="news" novalidate>
+          <label class="vh" for="news-email">Email address</label>
+          <input id="news-email" type="email" name="email" placeholder="Your email address" autocomplete="email">
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="news__msg" id="news-msg" role="status"></p>
+      </div>
+    </div>
+    <div class="foot__base">
+      <div><span>© 2026 SOLÉA HOUSE. A fictional hotel concept.</span><button class="txt" type="button" data-legal="privacy">Privacy Policy</button><button class="txt" type="button" data-legal="terms">Terms &amp; Conditions</button></div>
+      <div><span>Photography via Unsplash</span><span>Concept &amp; design by <a href="https://invitee.ge" target="_blank" rel="noopener">INVITÉ Studio</a></span></div>
+    </div>
+  </div>
+</footer>
+
+<button class="snd" id="snd" type="button" aria-label="Turn ambient sound on"><span class="snd__bars" aria-hidden="true"><i></i><i></i><i></i></span><span id="snd-t">Sound off</span></button>
+
+<!-- Detail / story / legal sheet -->
+<dialog class="sheet" id="sheet" aria-labelledby="sheet-h">
+  <button class="x" type="button" data-close aria-label="Close"></button>
+  <div class="sheet__grid">
+    <div class="ph sheet__img" id="sheet-img"></div>
+    <div class="sheet__body" id="sheet-body"></div>
+  </div>
+</dialog>
+
+<!-- Booking -->
+<dialog class="book" id="book" aria-labelledby="book-h">
+  <button class="x" type="button" data-close aria-label="Close booking"></button>
+  <div class="book__grid">
+    <aside class="book__aside">
+      <div class="ph"><img src="https://images.unsplash.com/photo-1787869200932-e8a1617012ed?auto=format&amp;fit=crop&amp;q=75&amp;w=1200" srcset="https://images.unsplash.com/photo-1787869200932-e8a1617012ed?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w, https://images.unsplash.com/photo-1787869200932-e8a1617012ed?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w, https://images.unsplash.com/photo-1787869200932-e8a1617012ed?auto=format&amp;fit=crop&amp;q=75&amp;w=1200 1200w, https://images.unsplash.com/photo-1787869200932-e8a1617012ed?auto=format&amp;fit=crop&amp;q=75&amp;w=1800 1800w, https://images.unsplash.com/photo-1787869200932-e8a1617012ed?auto=format&amp;fit=crop&amp;q=75&amp;w=2400 2400w" data-id="photo-1787869200932-e8a1617012ed" loading="lazy" decoding="async" alt="" sizes="(max-width:760px) 100vw, 430px"></div>
+      <div><span class="eyebrow">Booking inquiry</span><h2 id="book-h">Plan your stay</h2></div>
+      <div>
+        <div class="est" aria-live="polite"><span id="est-label">Select dates and a room for an estimate</span><b id="est-val">from €220</b></div>
+        <p class="demo">Demonstration only. SOLÉA HOUSE is a concept hotel, so no reservation is made, no payment is taken and nothing you enter leaves this page.</p>
+      </div>
+    </aside>
+    <div class="book__main">
+      <div class="form-view">
+        <form class="form" id="book-form" novalidate>
+          <div class="f"><label for="b-in">Check-in</label><input id="b-in" name="checkin" type="date" required aria-describedby="e-in"><p class="err" id="e-in"></p></div>
+          <div class="f"><label for="b-out">Check-out</label><input id="b-out" name="checkout" type="date" required aria-describedby="e-out"><p class="err" id="e-out"></p></div>
+          <div class="f"><label for="b-guests">Guests</label><select id="b-guests" name="guests" required aria-describedby="e-guests"><option value="1">1 guest</option><option value="2" selected>2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option></select><p class="err" id="e-guests"></p></div>
+          <div class="f"><label for="b-room">Room category</label><select id="b-room" name="room" required aria-describedby="e-room"><option value="">Select a room</option><option value="garden">The Garden Room, €220</option><option value="terrace">The Terrace Suite, €310</option><option value="mediterranean">The Mediterranean Suite, €390</option><option value="pool">The Private Pool Suite, €520</option></select><p class="err" id="e-room"></p></div>
+          <div class="f f--m"><label for="b-name">Full name</label><input id="b-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name"><p class="err" id="e-name"></p></div>
+          <div class="f f--m"><label for="b-email">Email address</label><input id="b-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email"><p class="err" id="e-email"></p></div>
+          <div class="f f--full"><label for="b-notes">Additional requests <span style="font-weight:400;letter-spacing:.06em;text-transform:none">(optional)</span></label><textarea id="b-notes" name="notes" rows="3"></textarea></div>
+          <div class="form__foot"><p>This sends nothing. You will see a sample confirmation on the next screen.</p><button class="btn" type="submit">Send demo inquiry</button></div>
+        </form>
+      </div>
+      <div class="done" id="done" tabindex="-1">
+        <span class="eyebrow">Demonstration inquiry</span>
+        <h2>Thank you, <span id="d-name"></span></h2>
+        <p class="body">This is how your inquiry confirmation would look. On a live site, the reservations team would reply within one working day.</p>
+        <dl class="sum" id="d-sum"></dl>
+        <p class="notice"><strong>No booking has been made.</strong> SOLÉA HOUSE is a fictional hotel concept by INVITÉ Studio. Your details were not sent or stored anywhere.</p>
+        <div class="room__cta"><button class="btn btn--line" type="button" id="d-again">Edit inquiry</button><button class="btn" type="button" data-close>Back to the house</button></div>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<!-- Lightbox -->
+<dialog class="lb on-dark" id="lb" aria-label="Gallery image viewer">
+  <div class="lb__bar"><span id="lb-cat"></span><button class="x" type="button" data-close aria-label="Close gallery"></button></div>
+  <div class="lb__stage"><img id="lb-img" alt=""></div>
+  <div class="lb__foot"><span id="lb-n" aria-live="polite"></span>
+    <div class="lb__nav">
+      <button class="arrow" type="button" id="lb-prev" aria-label="Previous image"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M17 10H3M8 5l-5 5 5 5"/></svg></button>
+      <button class="arrow" type="button" id="lb-next" aria-label="Next image"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 10h14M12 5l5 5-5 5"/></svg></button>
+    </div>
+  </div>
+</dialog>
+
+<script>
+(function(){
+'use strict';
+var $=function(s,c){return (c||document).querySelector(s)}, $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+var root=document.documentElement, reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var U=function(id,w){return 'https://images.unsplash.com/'+id+'?auto=format&fit=crop&q=75&w='+w};
+var esc=function(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})};
+
+/* Content */
+var ROOMS={
+  garden:{name:'The Garden Room',tag:'Garden level',price:220,cap:2,size:'28 m²',bed:'King bed',img:'photo-1723639906062-966e853fea45',alt:'A bed with white linen and a small lamp against a warm beige wall',
+    text:'Six rooms sit at garden level, each with its own shaded patio between the olive trees. Floors are honed limestone, cool underfoot. The bed faces the garden so the first thing you see is green.',
+    feats:['Private garden patio with two loungers','Rain shower in hand-finished tadelakt','King bed with washed linen','Minibar stocked from island producers','Air conditioning and ceiling fan','Garden breakfast included']},
+  terrace:{name:'The Terrace Suite',tag:'First floor',price:310,cap:2,size:'42 m²',bed:'King bed',img:'photo-1790276319085-f29666cd008c',alt:'A shaded terrace with a stone table under a slatted pergola',
+    text:'On the first floor of the garden wing, these suites trade the patio for a wide terrace above the treetops. Mornings arrive here first. A daybed inside takes over when the sun gets high.',
+    feats:['14 m² furnished private terrace','Sitting area with linen daybed','Walk-in shower and double stone basin','Garden and hill views','Espresso machine and island teas','Garden breakfast included']},
+  mediterranean:{name:'The Mediterranean Suite',tag:'Estate house',price:390,cap:3,size:'58 m²',bed:'King bed + daybed',img:'photo-1768487422639-7ba3900d0f02',alt:'A bright suite with a seating area, a beamed ceiling and an arched doorway',
+    text:'Four suites occupy the original estate house. The walls are a metre thick and the ceilings are high, so the rooms stay cool without effort. Each has a separate living room and a terrace that looks to the sea.',
+    feats:['Separate living room with daybed for a third guest','Stone bathroom with deep soaking tub','Sea-facing terrace','Original exposed limestone walls','Evening turndown with almond biscuits','Garden breakfast included']},
+  pool:{name:'The Private Pool Suite',tag:'Garden pavilion',price:520,cap:4,size:'76 m²',bed:'King bed + twin room',img:'photo-1718942900895-900a3db16c7d',alt:'A private stone pool with a small water feature beside a pale wall',
+    text:'Two freestanding pavilions stand apart from the house, each inside its own walled garden. The plunge pool is yours alone, and breakfast comes to you. Some guests do not leave the garden for days.',
+    feats:['Private 6 m plunge pool','Walled garden with outdoor shower','Two bedrooms and two bathrooms','Outdoor dining table for four','Breakfast served in the suite','Priority table for sunset dinners']}
+};
+var STORIES={
+  slow:{cat:'Wellbeing',title:'The Beauty of Slow Living',img:'photo-1589271243958-d61e12b61b97',alt:'A small vase with a dried stem beside rumpled linen',
+    p:['The island has a word for the hour after lunch when the shutters close and nothing is expected of anyone. Visitors often resist it for a day or two. Then they stop looking at the time.',
+       'Slowness here is practical. Bread is baked once, early. The pool is unheated, so you swim when the sun has done its work. Dinner starts when the light turns, which changes a little every evening.',
+       'We designed the house around that rhythm. There are no televisions in the rooms and few clocks on the walls. What you get in exchange is attention: for the food, the garden, and the person across the table.']},
+  weekend:{cat:'Travel',title:'A Weekend in Mallorca',img:'photo-1778168968332-bf5097f49a64',alt:'Stone houses on a green hillside',
+    p:['Saturday belongs to Santanyí. The market fills the square from early morning with almonds, sobrassada, baskets and ceramics. Go before ten, take a coffee under the church, and carry your figs back to the car in a paper bag.',
+       'In the afternoon, drive east until the road runs out. The coves on this coast are small, steep and clear to the bottom. Bring water and shoes that can handle rock, and stay until the day-trippers leave.',
+       'Keep Sunday for the hills. The Serra de Tramuntana is a little over an hour away, and the villages of Deià and Valldemossa repay a slow lunch. Be back at the house in time for the light on the terrace.']},
+  table:{cat:'Food',title:'The Mediterranean Table',img:'photo-1783455442171-16dbde079c53',alt:'A round tray of colourful small dishes',
+    p:['A good table on this island starts with very little: bread rubbed with ramallet tomato, olive oil, salt. This is pa amb oli, and almost every meal in Mallorca begins somewhere near it.',
+       'What follows depends on the week. Tumbet when the aubergines are good. Grilled fish with fennel from the garden. In early spring, almonds from the first harvest find their way into nearly everything, including dessert.',
+       'Our kitchen keeps the plates shared and the menu short. Dishes arrive when they are ready and stay in the middle of the table. Nobody is asked to hurry, and the last glass is usually poured under the stars.']}
+};
+var LEGAL={
+  privacy:{title:'Privacy Policy',p:['SOLÉA HOUSE is a fictional hotel created by INVITÉ Studio as a design concept. This website does not collect, store or share personal data.','The booking inquiry and newsletter forms are demonstrations. Anything you type stays in your browser and is discarded when you close or reload the page. No cookies are set by this site.','Fonts are loaded from Google Fonts and photographs from Unsplash. Those services receive standard technical request data, such as your IP address, when the page loads.']},
+  terms:{title:'Terms & Conditions',p:['This website is a portfolio concept. SOLÉA HOUSE does not exist as a business, and nothing on this site is an offer of accommodation.','Room descriptions, sizes, rates, travel times and contact details are illustrative. Submitting the booking form does not create a reservation or any obligation.','Photography is used under the Unsplash License and remains the work of its respective photographers. Design and copy © 2026 INVITÉ Studio.']}
+};
+var money=function(n){return '€'+n.toLocaleString('en-GB')};
+
+/* Booking service: the single integration point for a client build.
+   The page only calls quote() and submit(). To connect a booking engine, a hotel
+   management system, an email service or a payment step, replace the bodies of
+   these two functions. submit() must return a Promise that resolves to
+   {reference, status} or rejects on failure. In this concept nothing leaves the page. */
+var BookingService={
+  mode:'demo',
+  quote:function(roomId,nights){var r=ROOMS[roomId];return r&&nights>0?r.price*nights:null},
+  submit:function(inquiry){
+    return new Promise(function(resolve){
+      setTimeout(function(){resolve({reference:'DEMO-'+Math.random().toString(36).slice(2,7).toUpperCase(),status:'demo'})},350);
+    });
+  }
+};
+
+/* Entrance */
+requestAnimationFrame(function(){requestAnimationFrame(function(){root.classList.add('ready')})});
+
+/* Reveal on scroll */
+var revs=$$('.rv,.ph.rvl');
+function reveal(){
+  if(!revs.length)return;
+  var lim=window.innerHeight*.92;
+  revs=revs.filter(function(el){if(el.getBoundingClientRect().top<lim){el.classList.add('in');return false}return true});
+}
+addEventListener('load',reveal);
+
+/* Image safety net: retry a failed photo once, then hide the broken icon */
+function guard(im){
+  var fail=function(){
+    if(im.dataset.retry){var f=im.closest('.ph');if(f)f.classList.add('noimg');return}
+    im.dataset.retry='1';im.removeAttribute('srcset');im.src='https://images.unsplash.com/'+im.dataset.id+'?w=1200&q=75';
+  };
+  im.addEventListener('error',fail);
+  if(im.complete&&im.naturalWidth===0&&im.currentSrc)fail();
+}
+$$('img[data-id]').forEach(guard);
+
+/* Header state, parallax */
+var head=$('#head'), lastY=0, pars=$$('.par img'), heroImg=$('.hero__img img'), ticking=false;
+function frame(){
+  ticking=false;
+  reveal();
+  var y=window.scrollY, vh=window.innerHeight;
+  head.classList.toggle('solid',y>vh*.72);
+  head.classList.toggle('away',y>vh&&y>lastY+4&&!document.body.classList.contains('menu-open'));
+  if(y<lastY-4||y<vh)head.classList.remove('away');
+  lastY=y;
+  if(reduce)return;
+  if(y<vh*1.1)heroImg.style.setProperty('--py',(y*.12).toFixed(1)+'px');
+  pars.forEach(function(img){
+    var r=img.parentNode.getBoundingClientRect();
+    if(r.bottom<-80||r.top>vh+80)return;
+    var k=((r.top+r.height/2)-vh/2)/vh;
+    img.style.setProperty('--py',(k*-r.height*.07).toFixed(1)+'px');
+  });
+}
+addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(frame)}},{passive:true});
+addEventListener('resize',frame);frame();
+
+/* Active nav link */
+var links=$$('.nav a');
+if('IntersectionObserver' in window){
+  var spy=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.getAttribute('href')==='#'+e.target.id?a.setAttribute('aria-current','true'):a.removeAttribute('aria-current')})}})},{rootMargin:'-45% 0px -50% 0px'});
+  $$('main section[id]').forEach(function(s){spy.observe(s)});
+}
+
+/* Mobile menu */
+var burger=$('#burger'), menu=$('#menu');
+function setMenu(open){
+  menu.classList.toggle('open',open);menu.inert=!open;
+  burger.setAttribute('aria-expanded',open);burger.setAttribute('aria-label',open?'Close menu':'Open menu');
+  document.body.classList.toggle('menu-open',open);root.classList.toggle('lock',open);
+}
+burger.addEventListener('click',function(){setMenu(!menu.classList.contains('open'))});
+$$('a',menu).forEach(function(a){a.addEventListener('click',function(){setMenu(false)})});
+addEventListener('keydown',function(e){if(e.key==='Escape'&&menu.classList.contains('open')){setMenu(false);burger.focus()}});
+matchMedia('(min-width:1081px)').addEventListener('change',function(e){if(e.matches)setMenu(false)});
+
+/* Dialog helpers */
+var opener=null;
+function openDlg(d){opener=document.activeElement;setMenu(false);if(!d.open)d.showModal();root.classList.add('lock')}
+$$('dialog').forEach(function(d){
+  d.addEventListener('close',function(){root.classList.remove('lock');if(opener&&opener.focus)opener.focus()});
+  d.addEventListener('click',function(e){if(e.target===d||e.target.closest('[data-close]'))d.close()});
+});
+
+/* Sheet: room details, stories, legal */
+var sheet=$('#sheet'), sImg=$('#sheet-img'), sBody=$('#sheet-body');
+function showSheet(img,alt,html,textOnly){
+  sheet.classList.toggle('sheet--text',!!textOnly);
+  sImg.hidden=!img;
+  sImg.innerHTML=img?'<img src="'+U(img,1000)+'" alt="'+esc(alt)+'">':'';
+  sBody.innerHTML=html;sheet.scrollTop=0;openDlg(sheet);
+}
+document.addEventListener('click',function(e){
+  var t=e.target.closest('[data-details],[data-story],[data-legal],[data-book]');
+  if(!t)return;
+  if(t.dataset.details){
+    var r=ROOMS[t.dataset.details];
+    showSheet(r.img,r.alt,'<span class="eyebrow">'+r.tag+'</span><h2 id="sheet-h">'+r.name+'</h2><p class="body">'+r.text+'</p><div class="specs"><span>'+r.size+'</span><span>'+(r.cap>2?'Up to ':'')+r.cap+' guests</span><span>'+r.bed+'</span></div><h3>In the room</h3><ul class="feats">'+r.feats.map(function(f){return '<li>'+f+'</li>'}).join('')+'</ul><div class="room__top" style="margin:2rem 0 0;border-bottom:0;border-top:1px solid var(--line);padding:1.25rem 0 0"><span class="room__price">from <b>'+money(r.price)+'</b> / night</span><button class="btn" type="button" data-book="'+t.dataset.details+'">Book now</button></div>');
+  }else if(t.dataset.story){
+    var s=STORIES[t.dataset.story];
+    showSheet(s.img,s.alt,'<span class="eyebrow">'+s.cat+'</span><h2 id="sheet-h">'+s.title+'</h2>'+s.p.map(function(p){return '<p class="body">'+p+'</p>'}).join(''),true);
+  }else if(t.dataset.legal){
+    var l=LEGAL[t.dataset.legal];
+    showSheet(null,'','<span class="eyebrow">SOLÉA HOUSE</span><h2 id="sheet-h">'+esc(l.title)+'</h2>'+l.p.map(function(p){return '<p class="body">'+p+'</p>'}).join(''),true);
+  }else{
+    if(sheet.open)sheet.close();
+    openBook(t.dataset.book);
+  }
+});
+
+/* Booking */
+var book=$('#book'), form=$('#book-form'), fIn=$('#b-in'), fOut=$('#b-out'), fG=$('#b-guests'), fR=$('#b-room'), fN=$('#b-name'), fE=$('#b-email');
+var iso=function(d){return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2)};
+var parse=function(v){var p=v.split('-');return new Date(+p[0],p[1]-1,+p[2])};
+var nights=function(){if(!fIn.value||!fOut.value)return 0;return Math.round((parse(fOut.value)-parse(fIn.value))/864e5)};
+var nice=function(v){return parse(v).toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'long',year:'numeric'})};
+var today=new Date();today.setHours(0,0,0,0);
+fIn.min=iso(today);fOut.min=iso(new Date(today.getTime()+864e5));
+function openBook(room){
+  book.classList.remove('is-done');
+  if(room&&ROOMS[room])fR.value=room;
+  estimate();openDlg(book);
+  if(matchMedia('(hover:hover) and (pointer:fine)').matches)setTimeout(function(){fIn.focus({preventScroll:true})},60);
+}
+function estimate(){
+  var r=ROOMS[fR.value], n=nights(), lab=$('#est-label'), val=$('#est-val');
+  if(r&&n>0){lab.textContent=r.name+', '+n+(n===1?' night':' nights');val.textContent=money(BookingService.quote(fR.value,n))+' estimated'}
+  else if(r){lab.textContent=r.name+', per night';val.textContent='from '+money(r.price)}
+  else{lab.textContent='Select dates and a room for an estimate';val.textContent='from €220'}
+}
+function setErr(el,msg){var p=$('#'+el.getAttribute('aria-describedby'));p.textContent=msg||'';msg?el.setAttribute('aria-invalid','true'):el.removeAttribute('aria-invalid');return !msg}
+var rules={
+  'b-in':function(){return !fIn.value?'Choose a check-in date.':parse(fIn.value)<today?'Check-in cannot be in the past.':''},
+  'b-out':function(){return !fOut.value?'Choose a check-out date.':fIn.value&&nights()<1?'Check-out must be after check-in.':nights()>30?'For stays over 30 nights, please shorten the dates.':''},
+  'b-room':function(){return !fR.value?'Select a room category.':''},
+  'b-guests':function(){var r=ROOMS[fR.value];return r&&+fG.value>r.cap?r.name+' sleeps up to '+r.cap+'. Choose a larger suite or fewer guests.':''},
+  'b-name':function(){return fN.value.trim().length<2?'Enter your full name.':''},
+  'b-email':function(){return !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(fE.value.trim())?'Enter a valid email address, like name@example.com.':''}
+};
+function check(id){return setErr($('#'+id),rules[id]())}
+Object.keys(rules).forEach(function(id){
+  var el=$('#'+id);
+  el.addEventListener('blur',function(){if(el.value||el.getAttribute('aria-invalid'))check(id)});
+  el.addEventListener('change',function(){
+    if(id==='b-in'&&fIn.value){var m=iso(new Date(parse(fIn.value).getTime()+864e5+36e5));fOut.min=m;if(fOut.value&&fOut.value<m){fOut.value=''}}
+    if(el.getAttribute('aria-invalid'))check(id);
+    if(id==='b-room'||id==='b-guests')check('b-guests');
+    estimate();
+  });
+});
+function readInquiry(){
+  var n=nights();
+  return {roomId:fR.value,checkin:fIn.value,checkout:fOut.value,nights:n,guests:+fG.value,name:fN.value.trim(),email:fE.value.trim(),notes:$('#b-notes').value.trim(),estimate:BookingService.quote(fR.value,n)};
+}
+function showConfirmation(q,result){
+  var r=ROOMS[q.roomId];
+  $('#d-name').textContent=q.name.split(/\s+/)[0];
+  var rows=[['Reference',result.reference+' (sample)'],['Room',r.name],['Arrive',nice(q.checkin)],['Depart',nice(q.checkout)],['Stay',q.nights+(q.nights===1?' night':' nights')+', '+q.guests+(q.guests===1?' guest':' guests')],['Estimate',money(q.estimate)+' at '+money(r.price)+' per night'],['Email',q.email]];
+  if(q.notes)rows.push(['Requests',q.notes]);
+  $('#d-sum').innerHTML=rows.map(function(x){return '<div><dt>'+x[0]+'</dt><dd>'+esc(x[1])+'</dd></div>'}).join('');
+  book.classList.add('is-done');book.scrollTop=0;$('#done').focus();
+}
+var sendBtn=$('button[type=submit]',form), sendLabel=sendBtn.textContent, formNote=$('.form__foot p',form), formNoteText=formNote.textContent;
+form.addEventListener('submit',function(e){
+  e.preventDefault();
+  var bad=Object.keys(rules).filter(function(id){return !check(id)});
+  if(bad.length){$('#'+bad[0]).focus();return}
+  var q=readInquiry();
+  sendBtn.disabled=true;sendBtn.textContent='One moment';
+  BookingService.submit(q).then(function(result){showConfirmation(q,result);formNote.textContent=formNoteText})
+    .catch(function(){formNote.textContent='The inquiry could not be sent. Please try again.'})
+    .then(function(){sendBtn.disabled=false;sendBtn.textContent=sendLabel});
+});
+var qIn=$('#q-in'), qOut=$('#q-out');
+qIn.min=fIn.min;qOut.min=fOut.min;
+$('#quick').addEventListener('submit',function(e){
+  e.preventDefault();
+  if(qIn.value){fIn.value=qIn.value;fIn.dispatchEvent(new Event('change'))}
+  if(qOut.value&&(!qIn.value||qOut.value>qIn.value))fOut.value=qOut.value;
+  fG.value=$('#q-g').value;
+  openBook();
+});
+$('#d-again').addEventListener('click',function(){book.classList.remove('is-done');fIn.focus()});
+
+/* Lightbox */
+var lb=$('#lb'), lbImg=$('#lb-img'), items=$$('#gal .gal__btn'), cur=0;
+items.forEach(function(b,i){
+  var cap=document.createElement('span');cap.className='gal__cap';cap.setAttribute('aria-hidden','true');
+  cap.innerHTML='<span>'+b.dataset.cat+'</span><span>View</span>';b.appendChild(cap);
+  b.setAttribute('aria-label','Open image: '+$('img',b).alt);
+  b.addEventListener('click',function(){openDlg(lb);show(i,true)});
+});
+function show(i,instant){
+  cur=(i+items.length)%items.length;
+  var im=$('img',items[cur]), id=im.dataset.id;
+  var swap=function(){lbImg.src=U(id,1800);lbImg.alt=im.alt;lbImg.classList.remove('sw')};
+  if(instant||reduce)swap();else{lbImg.classList.add('sw');setTimeout(swap,220)}
+  $('#lb-cat').textContent=items[cur].dataset.cat;
+  $('#lb-n').textContent=('0'+(cur+1)).slice(-2)+' / '+('0'+items.length).slice(-2);
+}
+$('#lb-prev').addEventListener('click',function(){show(cur-1)});
+$('#lb-next').addEventListener('click',function(){show(cur+1)});
+lb.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+var tx=0;
+lb.addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)show(cur+(dx<0?1:-1))},{passive:true});
+
+/* Rooms swipe counter (mobile) */
+var list=$('#rooms-list'), cnt=$('#swipe-n');
+list.addEventListener('scroll',function(){
+  var w=list.firstElementChild.getBoundingClientRect().width+14;
+  cnt.textContent=Math.min(4,Math.round(list.scrollLeft/w)+1)+' / 4';
+},{passive:true});
+
+/* Ambient sound. Off by default and only ever started by a click on the control.
+   The default is a soft sea wash generated in the browser, so there is no audio
+   file to license. To use a recording instead, set AMBIENT_SRC to a looping file
+   you hold the rights to (for example 'audio/evening.mp3'). */
+var AMBIENT_SRC='';
+var Ambient=(function(){
+  var ctx, master, el, timer, LEVEL=.7;
+  function graph(c,out){
+    var len=c.sampleRate*4, buf=c.createBuffer(2,len,c.sampleRate);
+    for(var ch=0;ch<2;ch++){var d=buf.getChannelData(ch);for(var i=0;i<len;i++)d[i]=Math.random()*2-1}
+    var src=c.createBufferSource();src.buffer=buf;src.loop=true;
+    var swell=c.createGain();swell.gain.value=.8;swell.connect(out);
+    function lfo(freq,depth,target){var o=c.createOscillator(),g=c.createGain();o.frequency.value=freq;g.gain.value=depth;o.connect(g);g.connect(target);o.start()}
+    function layer(filters,base,depth,freq){
+      var node=src;
+      filters.forEach(function(f){var q=c.createBiquadFilter();q.type=f[0];q.frequency.value=f[1];q.Q.value=.5;node.connect(q);node=q});
+      var g=c.createGain();g.gain.value=base;node.connect(g);g.connect(swell);lfo(freq,depth,g.gain);
+    }
+    layer([['lowpass',380],['lowpass',380]],.62,.38,.085);   /* the body of each wave */
+    layer([['highpass',900],['lowpass',2600]],.035,.03,.085); /* a little foam on top */
+    lfo(.027,.2,swell.gain);                                  /* slow, uneven sets */
+    src.start();
+  }
+  function start(){
+    if(AMBIENT_SRC){
+      if(!el){el=new Audio(AMBIENT_SRC);el.loop=true;el.volume=0}
+      clearInterval(timer);
+      return el.play().then(function(){timer=setInterval(function(){el.volume=Math.min(LEVEL,el.volume+.02);if(el.volume>=LEVEL)clearInterval(timer)},60)});
+    }
+    var AC=window.AudioContext||window.webkitAudioContext;
+    if(!AC)return Promise.reject(new Error('Web Audio is not available'));
+    if(!ctx){ctx=new AC();master=ctx.createGain();master.gain.value=0;master.connect(ctx.destination);graph(ctx,master)}
+    return ctx.resume().then(function(){var t=ctx.currentTime;master.gain.cancelScheduledValues(t);master.gain.setValueAtTime(master.gain.value,t);master.gain.linearRampToValueAtTime(LEVEL,t+2.5)});
+  }
+  function stop(){
+    if(el){clearInterval(timer);timer=setInterval(function(){el.volume=Math.max(0,el.volume-.04);if(el.volume<=0){clearInterval(timer);el.pause()}},50);return}
+    if(!ctx)return;
+    var t=ctx.currentTime;master.gain.cancelScheduledValues(t);master.gain.setValueAtTime(master.gain.value,t);master.gain.linearRampToValueAtTime(0,t+.8);
+    clearTimeout(timer);timer=setTimeout(function(){if(!playing)ctx.suspend()},900);
+  }
+  var playing=false;
+  return {
+    graph:graph,
+    isOn:function(){return playing},
+    set:function(on){playing=on;if(!on){stop();return Promise.resolve()}clearTimeout(timer);return start().catch(function(err){playing=false;throw err})},
+    hold:function(paused){if(!playing)return;if(el){paused?el.pause():el.play()}else if(ctx){paused?ctx.suspend():ctx.resume()}}
+  };
+})();
+var snd=$('#snd'), sndT=$('#snd-t');
+function paintSound(){
+  var on=Ambient.isOn();
+  snd.classList.toggle('on',on);sndT.textContent=on?'Sound on':'Sound off';
+  snd.setAttribute('aria-label',on?'Turn ambient sound off':'Turn ambient sound on');
+}
+if(!AMBIENT_SRC&&!(window.AudioContext||window.webkitAudioContext))snd.hidden=true;
+snd.addEventListener('click',function(){
+  var p=Ambient.set(!Ambient.isOn());paintSound();
+  p.catch(function(){paintSound()});
+});
+document.addEventListener('visibilitychange',function(){Ambient.hold(document.hidden)});
+
+/* Newsletter (demo) */
+$('#news').addEventListener('submit',function(e){
+  e.preventDefault();
+  var inp=$('#news-email'), msg=$('#news-msg'), ok=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(inp.value.trim());
+  msg.textContent=ok?'Thank you. This is a concept site, so your address was not stored.':'Enter a valid email address, like name@example.com.';
+  if(ok)inp.value='';else inp.focus();
+});
+})();
+</script>
+</body>
+</html>
